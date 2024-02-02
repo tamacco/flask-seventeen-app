@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEVENTEEN Member Classifier</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <img class="header_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
+        <a class="header-logo" href="#">SEVENTEEN Member Classifier</a>
+    </header>
+
+    <div class="main">    
+        <h2>SEVENTEENは13人で構成されるKPOPグループです。<br>AIが送信された画像がどのメンバーか識別します。</h2>
+        <p>WONWOO（ウォヌ）、SEUNGKWAN（スングァン）、VERNON（バーノン）から一人選んで画像を送信してください。<br>※正面の顔が大きく映っている正方形の写真がベストです！</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="submit!" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+        <ul>
+            <li><div class="member">
+                <img class="member_img" src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/profile/wonwoo_s.jpg" alt="WONWOO" width="200px" height="200px">
+                <p>WONWOO</p></div></li>
+            <li><div class="member">
+                <img class="member_img" src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/profile/seungkwan_s.jpg" alt="SEUNGKWAN" width="200px" height="200px">
+                <p>SEUNGKWAN</p></div></li>
+            <li><div class="member">
+                <img class="member_img" src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/profile/vernon_s.jpg" alt="VERNON" width="200px" height="200px">
+                <p>VERNON</p></div></li>
+        </ul>
+    </div>
+
+    <footer>
+        <img class="footer_img" src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy">
+        <small>&copy; 2019 Aidemy, inc.</small>   
+    </footer>
+</body>
+</html>
